@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+
+# Build directories
+build/
+
+# Compiled files
+*.bin
+*.elf
+*.hex
+*.o
+*.map
+
+# Private credentials
+secrets.h
+arduino_secrets.h
+.env
