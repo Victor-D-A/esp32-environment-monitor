@@ -7,8 +7,6 @@ DHT dht(dhtPin, DHT11);
 void setup() {
   dht.begin();
   Serial.begin(115200);
-  // put your setup code here, to run once:
-
 }
 
 void loop() {
@@ -17,7 +15,17 @@ void loop() {
 
   if (isnan(temperature) || isnan(humidity)) {
     Serial.println("Failed to read from DHT sensor.");
+    delay(2000);
+    return;
   }
-  // put your main code here, to run repeatedly:
 
+  Serial.print("Temperature: ");
+  Serial.print(temperature);
+  Serial.println("°C");
+
+  Serial.print("Humidity: ");
+  Serial.print(humidity);
+  Serial.println("%");
+
+  delay(2000);
 }

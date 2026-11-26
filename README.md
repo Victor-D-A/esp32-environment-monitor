@@ -35,7 +35,11 @@ combine embedded systems, backend engineering, and full stack development.
 2. Wrote the setup for the DHT11 sensor.
 3. Created variables that store the readings of temperature and the humidity and 
 	display a failure if either fails to obtain a reading.
-4. Program successfully compiled but physical readings have not been tested.
+4. Program successfully compiled and uploaded to the ESP32.
+5. Temperature and Humidity readings correctly displayed in the Serial Monitor.
+6. Updated readings every 2 seconds.
+7. Failed sensor readings are accounted for.
+8. Initial hardware testing passed for temperature and humidity changes, along with the stability of sensor readings.
 
 ## Development Roadmap
 - Display onboard systems current operational conditions
