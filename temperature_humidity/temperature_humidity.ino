@@ -19,6 +19,12 @@ void loop() {
     return;
   }
 
+  if (humidity < 0 || humidity > 100) {
+    Serial.println("The humidity measurement is invalid.");
+    delay(2000);
+    return;
+  }
+
   Serial.print("Temperature: ");
   Serial.print(temperature);
   Serial.println("°C");

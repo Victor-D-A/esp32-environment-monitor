@@ -41,6 +41,20 @@ combine embedded systems, backend engineering, and full stack development.
 7. Failed sensor readings are accounted for.
 8. Initial hardware testing passed for temperature and humidity changes, along with the stability of sensor readings.
 
+## Testing and Validation
+### Humidity Validation
+
+The humidity values were manually assigned to test what would happen if readings outside and inside of the valid range were received. 
+The tests were manually performed.
+
+| Test Value | Expected Result | Actual Result | Status |
+| --- | --- | --- | --- |
+| 145% | Reject | Rejected | Pass |
+| -5% | Reject | Rejected | Pass |
+| 0% | Accept | Accepted | Pass |
+| 100% | Accept | Accepted | Pass |
+| 50% | Accept | Accepted | Pass |
+
 ## Development Roadmap
 - Display onboard systems current operational conditions
 - Allow device to receive commands from the computer.
