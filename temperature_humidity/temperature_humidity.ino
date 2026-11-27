@@ -25,6 +25,12 @@ void loop() {
     return;
   }
 
+  if (temperature < 0 || temperature > 50) {
+    Serial.println("Temperature reading outside acceptable range.");
+    delay(2000);
+    return;
+  }
+
   Serial.print("Temperature: ");
   Serial.print(temperature);
   Serial.println("°C");

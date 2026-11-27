@@ -55,6 +55,19 @@ The tests were manually performed.
 | 100% | Accept | Accepted | Pass |
 | 50% | Accept | Accepted | Pass |
 
+### Temperature Validation
+
+The temperature values were manually assigned to test what would happen if readings outside and inside of the valid range were received.
+The validation range is 0-50°C inclusive.
+
+| Test Value | Expected Result | Actual Result | Status |
+| --- | --- | --- | --- |
+| -10°C | Reject | Rejected | Pass |
+| 0°C | Accept | Accepted | Pass |
+| 25°C | Accept | Acccepted | Pass |
+| 50°C | Accept | Accepted | Pass |
+| 65°C | Reject | Rejected | Pass |
+
 ## Development Roadmap
 - Display onboard systems current operational conditions
 - Allow device to receive commands from the computer.
